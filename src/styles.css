@@ -1,1 +1,164 @@
 /* You can add global styles to this file, and also import other style files */
+.sidebar {
+    margin: 0;
+    padding: 0;
+    width: 200px;
+    background-color: black;
+    position: fixed;
+    height: 100%;
+    transition: all 0.3s ease;
+    overflow: auto;
+}
+
+.sidebar>a {
+    display: block;
+    color: white;
+    padding: 16px;
+    text-decoration: none;
+    line-height: 40px;
+}
+
+.sidebar a.active {
+    color: #eea847
+}
+
+.sidebar a:hover:not(.active) {
+    color: #eea847
+}
+
+.bi {
+    margin-right: 0.5rem;
+}
+
+.social-media {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.social-icons {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+    background-color: #3b3b3b;
+    color: white;
+    border-radius: 50%;
+    font-size: 15px;
+    text-decoration: none;
+}
+
+.social-icons i {
+    display: block;
+    line-height: 1;
+    margin: 0;
+    padding: 0;
+}
+
+.content {
+    margin-left: 200px;
+     min-height: 100vh;
+    padding: 16px;
+      overflow-y: auto;
+    padding-bottom: 5rem;
+}
+
+.sidebar .header {
+    color: white;
+    background-color: #323232f2;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding-bottom: 10px;
+}
+
+.name {
+    margin-top: 8px;
+    font-size: 16px;
+}
+
+.image {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-top: 3%;
+}
+
+.info-box {
+    background-color: #007bff !important;
+    border-radius: 3%;
+    height: 100%;
+    padding: 1rem;
+    color: white;
+}
+
+.info-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    margin-bottom: 2.5rem;
+}
+
+.info-item i {
+    font-size: 20px;
+    color: white;
+    min-width: 24px;
+    margin-top: 4px;
+}
+
+.info-text {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
+    color: #ffffff;
+}
+
+.info-text h5,
+.info-text p {
+    margin: 0 !important;
+    padding: 0 !important;
+    text-align: left;
+    line-height: 1.4;
+    word-break: break-word;
+}
+
+.alert-danger {
+    color: #b00020;
+}
+
+.contact-form {
+    background-color: #eef5fa;
+    border-radius: 3%;
+    height: 100%;
+    padding: 1rem;
+}
+
+
+
+@media screen and (max-width: 768px) {
+    .sidebar {
+        width: 100%;
+        height: auto;
+        position: relative;
+    }
+
+    .sidebar a {
+        float: left;
+    }
+
+    .content {
+        margin-left: 0;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .sidebar a {
+        float: none;
+        text-align: center;
+    }
+}
