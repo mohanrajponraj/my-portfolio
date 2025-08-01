@@ -3,7 +3,7 @@
     margin: 0;
     padding: 0;
     width: 200px;
-    background-color: black;
+    background-color:  #2f2f2f;;
     position: fixed;
     height: 100%;
     transition: all 0.3s ease;
@@ -19,11 +19,11 @@
 }
 
 .sidebar a.active {
-    color: #eea847
+    color:  #007bff;
 }
 
 .sidebar a:hover:not(.active) {
-    color: #eea847
+    color: #007bff;
 }
 
 .bi {
@@ -60,15 +60,15 @@
 
 .content {
     margin-left: 200px;
-     min-height: 100vh;
-    padding: 16px;
-      overflow-y: auto;
+    min-height: 100vh;
+    /* padding: 16px; */
+    overflow-y: auto;
     padding-bottom: 5rem;
 }
 
 .sidebar .header {
     color: white;
-    background-color: #323232f2;
+    background-color: #3a3a3a;
     display: flex;
     align-items: center;
     flex-direction: column;
