@@ -1,0 +1,63 @@
+.resume-section {
+  position: relative;
+  padding-left: 30px;
+}
+
+.timeline-item {
+  margin-bottom: 3rem;
+}
+
+/* Heading part (icon + text) */
+.timeline-heading h3 {
+  margin: 0;
+  font-weight: 600;
+  font-size: 1.25rem;
+}
+
+/* Body with marker and line */
+.timeline-body {
+  position: relative;
+}
+
+.timeline-marker {
+  position: absolute;
+  left: 0;
+  top: 6px;
+  width: 10px;
+  height: 10px;
+  background-color: #007bff;
+  border-radius: 50%;
+  z-index: 2;
+}
+
+.timeline-line {
+  position: absolute;
+  left: 4px;
+  top: 20px;
+  width: 2px;
+  height: 100%;
+  background-color: #007bff;
+  z-index: 1;
+}
+
+.timeline-content {
+  padding-left: 10px;
+}
+
+.fade-in {
+  animation: fadeInUp 0.5s ease-in-out;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+
