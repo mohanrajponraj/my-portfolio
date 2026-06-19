@@ -1,3 +1,8 @@
+.resume-container {
+  min-height: 100vh;
+  padding: 20px;
+}
+
 .resume-section {
   position: relative;
   padding-left: 30px;
@@ -43,8 +48,7 @@
 .timeline-content {
   padding-left: 10px;
 }
-
-.fade-in {
+/* .fade-in {
   animation: fadeInUp 0.5s ease-in-out;
 }
 
@@ -57,7 +61,9 @@
     opacity: 1;
     transform: translateY(0);
   }
-}
+} */
+
+
 
 
 

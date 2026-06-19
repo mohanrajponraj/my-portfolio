@@ -1,0 +1,146 @@
+
+/* Main wrapper that covers the whole viewport */
+/* .home-background {
+  background-image: url('https://t4.ftcdn.net/jpg/07/44/39/67/360_F_744396718_RZ6UK8azeTMXPA5dSYVPrRGVNUmK2FMf.jpg');
+  background-size: cover;           
+  background-position: center;       
+  background-repeat: no-repeat;     
+  padding: 20px;                    
+  color: white;                     
+  height: 100%;                      
+  min-height: 100vh;                 
+  display: flex;                   
+  padding-bottom: 0 !important;
+  align-items: flex-start;             
+  flex-direction: column;          
+}
+
+.home-background h1, .home-background p {
+  z-index: 2; 
+  text-align: center;
+}
+.scrollable-content {
+  max-height: 100%;  
+  overflow-y: auto;  
+}
+
+.home-container {
+  min-height: 100vh;
+  padding: 20px;
+} */
+
+
+.home-background {
+  background-image: url('https://t4.ftcdn.net/jpg/07/44/39/67/360_F_744396718_RZ6UK8azeTMXPA5dSYVPrRGVNUmK2FMf.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: white;
+  min-height: 100vh;
+  padding: 40px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  text-align: center;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6); /* dark overlay for text readability */
+  z-index: 1;
+}
+
+.scrollable-content {
+  position: relative;
+  z-index: 2;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.name {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.title {
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.intro {
+  font-size: 1rem;
+  margin-bottom: 2rem;
+  line-height: 1.6;
+  color: #ddd;
+}
+
+.cta-buttons {
+  margin-bottom: 2rem;
+}
+
+.btn {
+  display: inline-block;
+  margin: 0 10px;
+  padding: 12px 24px;
+  background-color: #ffffff;
+  color: #000;
+  text-decoration: none;
+  border-radius: 4px;
+  font-weight: bold;
+  transition: 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #f0f0f0;
+}
+
+.btn-outline {
+  background-color: transparent;
+  border: 2px solid #fff;
+  color: white;
+}
+
+.btn-outline:hover {
+  background-color: white;
+  color: black;
+}
+
+.social-icons {
+  margin-top: 1rem;
+}
+
+.social-icons a {
+  color: white;
+  margin: 0 10px;
+  font-size: 1.5rem;
+  transition: color 0.3s;
+}
+
+.social-icons a:hover {
+  color: #ccc;
+}
+
+@media (max-width: 768px) {
+  .name {
+    font-size: 2rem;
+  }
+
+  .title {
+    font-size: 1.2rem;
+  }
+
+  .intro {
+    font-size: 0.9rem;
+  }
+
+  .btn {
+    margin: 10px 5px;
+    padding: 10px 20px;
+  }
+}

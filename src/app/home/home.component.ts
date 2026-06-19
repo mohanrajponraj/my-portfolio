@@ -1,23 +1,26 @@
 import { ViewportScroller } from '@angular/common';
-import { Component, Input } from '@angular/core';
-import { Router, RouterModule } from '@angular/router';
+import { Component, Input, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
-  selector: 'app-side-bar',
+  selector: 'app-home',
   standalone: true,
-  imports: [RouterModule],
-  templateUrl: './side-bar.component.html',
-  styleUrl: './side-bar.component.css'
+  imports: [],
+  templateUrl: './home.component.html',
+  styleUrl: './home.component.css'
 })
-export class SideBarComponent {
-   @Input() activeComponent: string = ''
-
+export class HomeComponent implements OnInit {
+ @Input() activeComponent: string = ''
   constructor(private router: Router, private scroller: ViewportScroller,) { }
+
+  ngOnInit(): void {
+
+  }
 
   onSidebarClick(component: string) {
     this.router.navigate([`/${component}`]).then(() => {
       setTimeout(() => {
-        this.scrollToComponent(component);  
+        this.scrollToComponent(component); 
       }, 0);  
     });
   }

@@ -1,0 +1,21 @@
+<div class="home-background home-container" id="home">
+  <div class="overlay"></div> 
+  <div class="scrollable-content">
+    <h1 class="name">Hi, Lorem, ipsum dolor.</h1>
+    <p class="title">Front-End Developer</p>
+    
+    <p class="intro">
+      I build responsive and engaging web interfaces using Angular, HTML, CSS, and JavaScript. Passionate about crafting clean code and elegant user experiences.
+    </p>
+
+    <div class="cta-buttons">
+      <a routerLink="/resume" routerLinkActive="active" [class.active]="activeComponent === 'resume'" (click)="onSidebarClick('resume')" class="btn">View Resume</a>
+      <a routerLink="/contact" routerLinkActive="active" [class.active]="activeComponent === 'contact'" (click)="onSidebarClick('contact')" class="btn btn-outline">Contact Me</a>
+    </div>
+
+    <!-- <div class="social-icons">
+      <a href="#" target="_blank"><i class="bi bi-linkedin"></i></a>
+      <a href="#" target="_blank"><i class="bi bi-github"></i></a>
+    </div> -->
+  </div>
+</div>
